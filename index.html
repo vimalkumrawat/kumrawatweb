@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="booknow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Book an adventure now!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required=""
+              type="text">
+
+            <input name="email" placeholder="Enter email address"
+              pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required=""
+              type="email">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- Header start   -->
+  <header class="container-fluid menu fixed-top" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg">
+            <a href="" class="navbar-brand">
+              <img src="image/Logo.png" alt="" width="200">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#secvice" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" data-bs-target="#booknow" data-bs-toggle="modal" class="nav-link">Book Now</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- slider start -->
+  <div class="carousel slide" data-bs-ride="carousel" id="slider1">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background: url(image/slider1.jpg) center;background-size: cover;">
+        <div class="carousel-item-inner">
+          <h6 class="text-white mb-20 text-uppercase text-center">Discover the Colorful World</h6>
+          <h1 class="text-uppercase text-white">New Adventure</h1>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br />
+            or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+          <a href="#" class="text-uppercase slider-btn">Discover Now</a>
+        </div>
+      </div>
+      <div class="carousel-item" style="background: url(image/slider2.jpg)center;background-size: cover;">
+        <div class="carousel-item-inner">
+          <h6 class="text-white mb-20 text-uppercase text-center">Discover the Colorful World</h6>
+          <h1 class="text-uppercase text-white">New Adventure</h1>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br />
+            or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+          <a href="#" class="text-uppercase slider-btn">Discover Now</a>
+        </div>
+
+      </div>
+      <div class="carousel-item" style="background: url(image/slider3.jpg)center;background-size: cover;">
+        <div class="carousel-item-inner">
+          <h6 class="text-white mb-20 text-uppercase text-center">Discover the Colorful World</h6>
+          <h1 class="text-uppercase text-white">New Adventure</h1>
+          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br />
+            or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+          <a href="#" class="text-uppercase slider-btn">Discover Now</a>
+        </div>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- slider end -->
+
+  <!-- about section start -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1>Why Choose Us Your Fitness Builder</h1>
+          <p>Who are in extremely love with eco friendly system.</p>
+        </div>
+      </div>
+      <div class="row about-inner">
+        <div class="col-lg-6">
+          <img src="image/about-img.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+          <h3>We Realize that <br />there are reduced <br />Wastege Stand out</h3>
+          <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards
+            especially in the workplace. Thats why its crucial that, as women.</p>
+          <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards
+            especially in the workplace. Thats why its crucial that, as women. Thats why its crucial that, as women.</p>
+          <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards
+            especially in the workplace. Thats why its crucial that, as women.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about section end -->
+
+  <!-- Features Section start -->
+  <section class="about-section" id="secvice">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1>Some Features that Made us Unique</h1>
+          <p>Who are in extremely love with eco friendly system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container fe-section">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="fe-section-item">
+          <h4>Expert Technicians</h4>
+          <p>Usage of the Internet is becoming more common due to rapid
+            advancement of technology and power.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="fe-section-item">
+          <h5>Professional Service</h5>
+          <p>Usage of the Internet is becoming more common due to rapid
+            advancement of technology and power.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="fe-section-item">
+          <h5>Great Support</h5>
+          <p>Usage of the Internet is becoming more common due to rapid
+            advancement of technology and power.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="fe-section-item">
+          <h5>Technical Skills</h5>
+          <p>Usage of the Internet is becoming more common due to rapid
+            advancement of technology and power.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="fe-section-item">
+          <h5>Highly Recomended</h5>
+          <p>Usage of the Internet is becoming more common due to rapid
+            advancement of technology and power.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="fe-section-item">
+          <h5>Positive Reviews</h5>
+          <p>Usage of the Internet is becoming more common due to rapid
+            advancement of technology and power.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Features Section end -->
+
+  <!-- Blog Section start -->
+   <section class="about-section" id="blog">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h1>News & Articles</h1>
+          <p>Who are in extremely love with eco friendly system.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="image/blog-01.jpg" class="card-img-top" alt="...">
+            <div class="card-body mb-5">
+              <h5 class="card-title">What we promise high quality IT Agency Services</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="image/blog-02.jpg" class="card-img-top">
+            <div class="card-body mb-5">
+              <h5 class="card-title">Write a Better security method</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="image/blog-03.jpg" class="card-img-top" alt="...">
+            <div class="card-body mb-5">
+              <h5 class="card-title">Tech experiences that connect us</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="image/blog-04.jpg" class="card-img-top" alt="...">
+            <div class="card-body mb-5">
+              <h5 class="card-title">A Complete Guide to Cybersecurity</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   </section> 
+
+  <!-- Blog Section end -->
+
+
+  <!-- contact section start -->
+  <section class="about-section" id="contact">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1>If you need, Just drop us a line</h1>
+          <p>Who are in extremely love with eco friendly system.</p>
+        </div>
+      </div>
+      <form>
+        <div class="row form-outer">
+          <div class="col-lg-6 form-group">
+            <input type="text" placeholder="Enter Your Name" class="form-control" />
+            <input type="text" placeholder="Enter email address" class="form-control" />
+            <input type="text" placeholder="Enter Your Subject" class="form-control" />
+          </div>
+          <div class="col-lg-6">
+            <textarea class="form-control" placeholder="Message"></textarea>
+            <button class="btn btn-primary">Send Message <i class="fa-solid fa-arrow-right-long"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  <!-- contact section end -->
+
+
+  <!-- Footer section Start -->
+  <section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h5>About us</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              dolore magna aliqua.</p>
+            <p>Copyright ©2024 All rights reserved | This template is made by</p>
+            <a href="https://kumrawatweb.site/" target="_blank">Kumrawat Web Servics</a>
+          </div>
+          <div class="col-lg-5">
+            <h5>Newsletter</h5>
+            <p>Stay update with our latest</p>
+            <p>
+            <form class="d-flex">
+              <input type="text" class="form-control" placeholder="Enter Email" />
+              <button class="btn btn-primary"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </form>
+            </p>
+
+          </div>
+          <div class="col-lg-2">
+            <h5>Follow us</h5>
+            <p>Let us be social</p>
+            <div class="s-link">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- Footer section end -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

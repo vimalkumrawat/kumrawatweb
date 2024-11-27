@@ -1,0 +1,212 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-padding-top: 70px;
+    scroll-behavior: smooth;
+}
+
+.menu {
+    background-color: #5376f5;
+}
+
+#navbarNav ul li a {
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+#navbarNav ul li a:hover,
+#navbarNav ul li a .active {
+    color: #F66866;
+}
+
+
+#slider1 .carousel-item {
+    height: 730px;
+    text-align: center;
+    color: white;
+}
+
+.carousel-item-inner {
+    width: 100%;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#slider1 .carousel-item h6 {
+    font-weight: bold;
+    padding-top: 300px;
+    text-transform: uppercase;
+}
+
+#slider1 .carousel-item h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+.slider-btn {
+    border: 1px solid white;
+    padding: 8px 25px;
+    display: table;
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.about-section {
+    padding: 50px 0px 50px 0px;
+}
+
+.about-section h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.about-inner {
+    margin-top: 50px;
+}
+
+.about-inner h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.about-inner p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    /* margin-right: 70px; */
+    line-height: 30px;
+}
+
+.fe-section {
+    padding-bottom: 25px;
+}
+
+.fe-section-item {
+    background-color: #f9f9ff;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.fe-section-item:hover {
+    background-color: #0095DA;
+    color: white;
+}
+
+.form-outer {
+    margin-top: 50px;
+}
+
+.form-outer input {
+    height: 45px;
+    margin-bottom: 20px
+}
+
+.form-outer textarea {
+    height: 175px;
+    margin-bottom: 30px;
+}
+
+.form-outer button {
+    border-radius: 15px;
+    padding: 7px 30px;
+}
+
+.form-outer button .fa-solid {
+    transition: 1s;
+}
+
+.form-outer button:hover .fa-solid {
+    transform: translate(15px);
+}
+
+footer {
+    background-color: #222222;
+    padding: 100px 0px;
+}
+
+footer h5 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: rgb(174, 174, 174);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer form input {
+    width: 40% !important;
+    border-radius: 0px !important;
+    background-color: black !important;
+    color: #d1d1d1 !important;
+    border: 0px !important;
+    border-right: 0px !important;
+}
+
+footer form button {
+
+    border-radius: 0px !important;
+
+}
+
+.s-link i {
+    color: #f9f9ff;
+    margin-right: 20px;
+}
+
+.modal-body input {
+    margin-bottom: 20px;
+}
+
+/* --- Blog page css ----- */
+
+.site-title h3 {
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    display: table;
+    padding-top: 100px;
+}
+.blog-list{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.blog-list h4{
+    font-size: 15px;
+    font-weight: bold;
+}
+.blog-list p, h6{
+    font-size: 13px;
+    text-align: justify;
+    margin-right: 20px;
+    color: rgb(106, 106, 106)
+}
+
+.blog-list img{
+    height: 130px;
+}
+.post-list{
+    margin-top: 40px;
+}
+.post-list h3{
+    color: rgb(106, 106, 106);
+    margin-right: 25px;
+}
+
+.post-list p{
+    font-size: 13px;
+    color: rgb(106, 106, 106);
+}
